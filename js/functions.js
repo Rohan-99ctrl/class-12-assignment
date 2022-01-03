@@ -53,7 +53,7 @@ let approvalFunc = (year) => {
 
     if(gender.value == 'male' || gender.value == 'Male' || gender.value == 'MALE'){
 
-        if(year >= 0 && year <= 20 && gender.value == 'male'){
+        if(year >= 0 && year <= 20){
             return `<p class="alert alert-warning">Please wait. Your age is ${year} years old. According to the law of Bangladesh, you are not old enough to get married yet. You are not eligible for marriage until you are 21 years old. So, you have to wait ${21 - year} years.</p>`;
         }else if(year >= 21 && year <= 80){
             return `<p class="alert alert-success">Congratulations! Your age is ${year} years old. So, You have reached the age of marriage. You can get married!!!</p>`; 
